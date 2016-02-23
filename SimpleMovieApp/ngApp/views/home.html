@@ -1,0 +1,13 @@
+﻿
+<div ng-show="!account.isLoggedIn()">
+    <p>
+        Please login using the username stephen.walther@superexpert.com 
+        and password Secret123!
+    </p>
+</div>
+
+<ul ng-show="account.isLoggedIn()">
+    <li ng-repeat="movie in controller.movies">
+        {{movie.title}}
+    </li>
+</ul>
